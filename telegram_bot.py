@@ -40,7 +40,7 @@ from main import (
 )
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "8865820443:AAEt6bFmfFBuOof3f-f_IqUE1Uz7EST5o7k").strip()
-_admin_ids_raw = os.environ.get("TELEGRAM_ADMIN_IDS", "@HaghaniNajaran").strip()
+_admin_ids_raw = os.environ.get("TELEGRAM_ADMIN_IDS", "220594860").strip()
 ADMIN_IDS = {int(x) for x in _admin_ids_raw.replace(" ", "").split(",") if x.isdigit()} if _admin_ids_raw else set()
 
 API_BASE = f"https://api.telegram.org/bot{BOT_TOKEN}"
